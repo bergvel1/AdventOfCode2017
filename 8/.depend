@@ -1,0 +1,7 @@
+abs_syn.cmo :
+abs_syn.cmx :
+main.cmo : parse.cmi lex.cmo abs_syn.cmo
+main.cmx : parse.cmx lex.cmx abs_syn.cmx
+parse.cmo : abs_syn.cmo parse.cmi
+parse.cmx : abs_syn.cmx parse.cmi
+parse.cmi : abs_syn.cmo

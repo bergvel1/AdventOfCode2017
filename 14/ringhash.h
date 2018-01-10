@@ -1,0 +1,1 @@
+unsigned int * ringhash(const char * input);
